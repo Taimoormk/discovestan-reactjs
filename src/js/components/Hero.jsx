@@ -6,14 +6,15 @@ import { connect } from 'react-redux';
 // ########## Import Screens Here ##########
 
 // ########## Import Components Here ##########
-import Hero from './Hero';
 
-class App extends Component {
+class Hero extends Component {
   render() {
-    return (
-      <Hero />
+    return(
+      <section id="hero">
+        <div className="hero-background"></div>
+      </section>
     );
   }
 }
 
-export default App;
+export default Hero;

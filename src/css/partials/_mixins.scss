@@ -1,0 +1,12 @@
+// ########## All Layout Mixins Here ##########
+
+// ########## All Text Mixins Here ##########
+
+// ########## All Image Mixins Here ##########
+@mixin hero-background($bic, $bil) {
+  width: 100%;
+  height: 100vh;
+  background: $bic url($bil) no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+}

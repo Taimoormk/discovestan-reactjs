@@ -1,0 +1,5 @@
+#hero {
+  .hero-background {
+    @include hero-background($background-image-color, './images/hero-background.jpg')
+  }
+}
