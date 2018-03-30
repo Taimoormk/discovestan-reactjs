@@ -1,6 +1,56 @@
 // ########## All Layout Mixins Here ##########
+@mixin wrapper($w) {
+  margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
+  width: $w;
+}
 
 // ########## All Text Mixins Here ##########
+@mixin H1($t-a, $c) {
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 70px;
+  margin: 0px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  // padding-top: 30px;
+  text-align: $t-a;
+  color: $c;
+}
+
+@mixin H2($t-a, $c) {
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 40px;
+  margin: 0px;
+  letter-spacing: 0.1em;
+  padding-top: 5px;
+  text-align: $t-a;
+  color: $c;
+}
+
+@mixin H3($t-a, $c) {
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 34px;
+  margin: 0px;
+  letter-spacing: 0.1em;
+  padding-top: 5px;
+  text-align: $t-a;
+  color: $c;
+}
+
+@mixin H4($t-a, $c) {
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 30px;
+  margin: 0px;
+  letter-spacing: 0.1em;
+  padding-top: 5px;
+  text-align: $t-a;
+  color: $c;
+}
 
 // ########## All Image Mixins Here ##########
 @mixin hero-background($bic, $bil) {

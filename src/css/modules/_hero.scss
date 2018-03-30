@@ -1,5 +1,26 @@
 #hero {
   .hero-background {
-    @include hero-background($background-image-color, './images/hero-background.jpg')
+    @include hero-background($background-image-color, './images/hero-background.jpg');
+    .content-container {
+      position: relative;
+      left: 100px;
+      top: 40vh;
+      .sectionH1 {
+        @include H1('left', $white);
+      }
+      .sectionH2 {
+        @include H2('left', $white);
+      }
+      .sectionH3 {
+        @include H3('left', $white);
+      }
+      .sectionH4 {
+        @include H4('left', $white);
+      }
+      .app-store-links {
+        width: 200px;
+        padding: 10px 10px 10px 0px;
+      }
+    }
   }
 }
