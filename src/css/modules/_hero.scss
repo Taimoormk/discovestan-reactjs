@@ -5,6 +5,9 @@
       position: relative;
       left: 100px;
       top: 40vh;
+      .discovestan-logo {
+        width: 900px;
+      }
       .section-heading {
         @include H1('left', $white);
       }

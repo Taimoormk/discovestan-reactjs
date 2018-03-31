@@ -1,7 +1,7 @@
 var path = require('path')
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 const glob = require('glob-all')
-var PurifyCSSPlugin= require('purifycss-webpack'); 
+var PurifyCSSPlugin = require('purifycss-webpack');
 
 module.exports = {
   entry: [
@@ -24,7 +24,7 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['env', 'react'],
-            plugins: ["transform-object-rest-spread", ]
+            plugins: ["transform-object-rest-spread",]
           }
         }
       },
@@ -35,14 +35,14 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['env'],
-            plugins: ["transform-object-rest-spread", ]
+            plugins: ["transform-object-rest-spread",]
           }
         }
       },
       {
-        test:/\.css$/,
+        test: /\.css$/,
         use: ExtractTextPlugin.extract({
-          use: [ 
+          use: [
             {
               loader: 'css-loader',
               options: {
@@ -53,9 +53,9 @@ module.exports = {
         })
       },
       {
-        test:/\.scss$/,
+        test: /\.scss$/,
         use: ExtractTextPlugin.extract({
-          use: [ 
+          use: [
             {
               loader: 'css-loader',
               options: {
@@ -65,12 +65,16 @@ module.exports = {
             'sass-loader'
           ]
         })
+      },
+      {
+        test: /\.svg$/,
+        loader: 'svg-inline-loader'
       }
     ]
   },
 
   resolve: {
-    extensions:['.js', '.jsx']
+    extensions: ['.js', '.jsx']
   },
 
   plugins: [
