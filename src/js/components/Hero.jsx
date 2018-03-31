@@ -18,8 +18,8 @@ class Hero extends Component {
             <h2 className="sectionH2">{appData[0].sectionH2}</h2>
             <h3 className="sectionH3">{appData[0].sectionH3}</h3>
             <h4 className="sectionH4">{appData[0].sectionH4}</h4>
-            <img className="app-store-links" src="./images/apple.png" alt="Discovestan Apple Store link" />
-            <img className="app-store-links" src="./images/google.png" alt="Discovestan Google Play link" />
+            <img className="app-store-links" src={appData[0].appleStoreIcon} alt={appData[0].appleStoreIconAlt} />
+            <img className="app-store-links" src={appData[0].googleStoreIcon} alt={appData[0].googleStoreIconAlt} />
           </div>
         </div>
       </section>
