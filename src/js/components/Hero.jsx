@@ -50,4 +50,8 @@ class Hero extends Component {
   }
 }
 
+Hero.propTypes = {
+  //getAction: PropTypes.func.isRequired,
+};
+
 export default Hero;
