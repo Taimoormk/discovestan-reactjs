@@ -3,7 +3,7 @@ export const appData = [
     id: 1,
     sectionName: 'hero',
     sectionHeading: 'Discovestan',
-    sectionLine1: 'Discover Pakistan with us',
+    sectionLine1: 'Discover <em>Pakistan</em> with us,',
     sectionLine2: 'as we bring the best',
     sectionLine3: 'stories for you...',
     sectionLine4: 'download our apps from the following stores.',
