@@ -5,21 +5,17 @@
       position: relative;
       left: 100px;
       top: 40vh;
-      .sectionH1 {
+      .section-heading {
         @include H1('left', $white);
       }
-      .sectionH2 {
+      .section-line {
         @include H2('left', $white);
-      }
-      .sectionH3 {
-        @include H3('left', $white);
-      }
-      .sectionH4 {
-        @include H4('left', $white);
+        display: block;
       }
       .app-store-links {
         width: 200px;
         padding: 10px 10px 10px 0px;
+        cursor: pointer;
       }
     }
   }
