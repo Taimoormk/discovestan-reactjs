@@ -1,4 +1,4 @@
-export const appData = [
+const appData = [
   {
     id: 1,
     sectionName: 'hero',
@@ -13,3 +13,5 @@ export const appData = [
     googleStoreIconAlt: 'Discovestan Google Play link'
   }
 ]
+
+export default appData;

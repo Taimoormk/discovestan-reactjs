@@ -1,6 +1,6 @@
 // ########## Import Dependencies Here ##########
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
 
 // ########## Import Screens Here ##########
 
@@ -8,6 +8,11 @@ import { connect } from 'react-redux';
 import Hero from './Hero';
 
 class App extends Component {
+
+  componentDidMount(){
+    
+  }
+  
   render() {
     return (
       <Hero />
